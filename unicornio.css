@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 500px;
+    width: 1000px;
+}
+
+img.fundo {
+    height: 500px;
+    width: 100%;
+    position:absolute;
+   
+}
+
+
+.game-board  {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.pirulito {
+    position: absolute;  
+    bottom: 0;
+    width: 80px;
+    height: 160px;
+    animation: pirulito-animation 5s infinite linear;
+}
+
+.uni {
+    position: absolute;
+    width: 165px;
+    bottom: 0;
+    height: 240px;
+    
+    
+}
+
+.jump {
+    animation: jump 1000ms ease-out;
+}
+
+.arco {
+    position: relative;
+    width: 100%;
+    height: 500px;
+   
+}
+
+.nuvem {
+    animation: passa-animation 5s infinite linear;
+    width: 400px;
+    height: 200px;
+    position:absolute;
+   
+    
+}
+/*.passa{
+    animation: passa 3000ms ease-out ;
+} */
+
+
+
+@keyframes pirulito-animation {
+    from {
+        right: -80px;
+    } to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+     30% {
+        bottom: 190px;
+    }  40% {
+        bottom: 200px;
+    } 
+    
+    50% {
+        bottom: 240px;
+    } 
+    55% {
+        bottom: 200px;
+    } 
+    60% {
+        bottom: 200px;
+    } 
+    100% {
+        bottom:0;
+    }
+}
+
+@keyframes passa {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+
+}
